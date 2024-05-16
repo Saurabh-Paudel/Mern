@@ -1,0 +1,135 @@
+body {
+  font-family: josefin sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+.card {
+  width: 270px;
+  height: 365px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: center;
+  position: relative;
+}
+
+.header {
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+.header i {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  margin: 5px 5px;
+  background: linear-gradient(to right, #1389ff, #1db4e7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 5px;
+}
+
+.header i:hover {
+  /* background: linear-gradient(to right, #2f1ac4, #eeeffb); */
+  background: #2f1ac4;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-container {
+  padding: 20px;
+}
+
+.image-container img {
+  position: relative;
+  width: 130px;
+  height: 150px;
+  top: 35px;
+}
+
+.button-container {
+  padding: 10px 0;
+  position: absolute;
+  left: 80px;
+}
+
+.button-container button {
+  background-color: #08d15f;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  background-color: #ffffff;
+  padding: 5px;
+  top: 50px;
+  transition: background-color 0.3s;
+}
+
+.footer .product-name {
+  font-size: 18px;
+  color: #fb2e86;
+  margin: 5px 0;
+}
+
+.footer .product-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.footer .product-code .blue,
+.yellow,
+.pink {
+  width: 14px;
+  height: 4px;
+  border-radius: 25px;
+}
+.footer .product-code .blue {
+  background-color: #05e6b7;
+}
+.footer .product-code .yellow {
+  background-color: #f701a8;
+}
+
+.footer .product-code .pink {
+  background-color: #ffeac1;
+}
+
+.footer .code p {
+  position: relative;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #151875;
+}
+
+.footer .price {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #151875;
+}
+.footer:hover {
+  background-color: #2f1ac4;
+}
+.footer:hover .product-name,
+.footer:hover .product-code,
+.footer:hover .code p,
+.footer:hover .price {
+  color: white; /* Change text color to white upon hover */
+}
