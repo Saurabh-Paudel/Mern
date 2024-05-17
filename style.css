@@ -10,73 +10,82 @@ body {
 
 .card {
   width: 270px;
-  height: 365px;
+  height: 480px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   background-color: white;
   text-align: center;
   position: relative;
 }
 
+.image-container {
+  position: relative;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
 .header {
-  border-radius: 50%;
+  display: flex;
   padding: 10px;
-  position: absolute;
-  top: 18px;
-  left: 16px;
+  position: relative;
+  top: 10px;
+  left: 0px;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .header {
+  opacity: 1;
 }
 
 .header i {
-  position: relative;
-  width: 21px;
-  height: 21px;
-  margin: 5px 5px;
+  margin: 0 5px;
   background: linear-gradient(to right, #1389ff, #1db4e7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 5px;
+  cursor: pointer;
 }
 
 .header i:hover {
-  /* background: linear-gradient(to right, #2f1ac4, #eeeffb); */
   background: #2f1ac4;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.image-container {
-  padding: 20px;
-}
-
-.image-container img {
-  position: relative;
-  width: 130px;
-  height: 150px;
-  top: 35px;
-}
-
 .button-container {
-  padding: 10px 0;
   position: absolute;
-  left: 80px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none; /* Initially hidden */
+}
+
+.image-container:hover .button-container {
+  display: block; /* Show button on hover */
 }
 
 .button-container button {
   background-color: #08d15f;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
 .footer {
   position: relative;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 5px;
-  top: 50px;
+  bottom: 25px;
   transition: background-color 0.3s;
 }
 
